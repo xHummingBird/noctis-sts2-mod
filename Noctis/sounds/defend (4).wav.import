@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://btjwxtfaevxrt"
+path="res://.godot/imported/defend (4).wav-76b5a226ee18dfe5439dd1f55ae8e49a.sample"
+
+[deps]
+
+source_file="res://Noctis/sounds/defend (4).wav"
+dest_files=["res://.godot/imported/defend (4).wav-76b5a226ee18dfe5439dd1f55ae8e49a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://coiwnlqhap3sy"
+path="res://.godot/imported/attack (3).wav-579d91f6bfef3e2cd5cf321490b0c181.sample"
+
+[deps]
+
+source_file="res://Noctis/sounds/attack (3).wav"
+dest_files=["res://.godot/imported/attack (3).wav-579d91f6bfef3e2cd5cf321490b0c181.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

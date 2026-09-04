@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bge8x3dq8qmx0"
+path="res://.godot/imported/enemy_hit_slash (4).wav-8dd3b2519510f50a84fb6584e8c9688f.sample"
+
+[deps]
+
+source_file="res://Noctis/sfx/enemy_hit_slash (4).wav"
+dest_files=["res://.godot/imported/enemy_hit_slash (4).wav-8dd3b2519510f50a84fb6584e8c9688f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

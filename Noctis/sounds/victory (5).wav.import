@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cbbuadhyf44ho"
+path="res://.godot/imported/victory (5).wav-9497458f2321009b258f253d4e69ec07.sample"
+
+[deps]
+
+source_file="res://Noctis/sounds/victory (5).wav"
+dest_files=["res://.godot/imported/victory (5).wav-9497458f2321009b258f253d4e69ec07.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

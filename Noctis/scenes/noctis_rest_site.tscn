@@ -1,0 +1,109 @@
+[gd_scene load_steps=11 format=3 uid="uid://bq476jsjbtg4h"]
+
+[ext_resource type="Script" uid="uid://bixb8gybcppgd" path="res://NoctisCode/Nodes/NoctisNRestSiteCharacter.cs" id="1_nsbi6"]
+[ext_resource type="Texture2D" uid="uid://vg4f8dsl6wbg" path="res://Noctis/images/spritesheets/idle_normal/27_idle.png" id="1_pxt6h"]
+[ext_resource type="Texture2D" uid="uid://cugw4h75n1g5y" path="res://Noctis/images/spritesheets/idle_normal/28_idle.png" id="2_nsbi6"]
+[ext_resource type="Texture2D" uid="uid://dca0tnhq4ofo0" path="res://Noctis/images/spritesheets/idle_normal/29_idle.png" id="3_t27ad"]
+[ext_resource type="Texture2D" uid="uid://hm6acfv0r8x4" path="res://Noctis/images/spritesheets/idle_normal/30_idle.png" id="5_0xxx0"]
+[ext_resource type="PackedScene" uid="uid://5fkryglj1k0e" path="res://Noctis/scenes/selection_reticle.tscn" id="5_t27ad"]
+[ext_resource type="Texture2D" uid="uid://rylkehw0jxf6" path="res://Noctis/images/spritesheets/idle_normal/31_idle.png" id="6_l8o26"]
+
+[sub_resource type="Animation" id="Animation_ebjc6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_pxt6h")]
+}
+
+[sub_resource type="Animation" id="Animation_xu5ug"]
+resource_name = "rest_site"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_nsbi6"), ExtResource("3_t27ad"), ExtResource("5_0xxx0"), ExtResource("6_l8o26")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qe8jq"]
+_data = {
+&"RESET": SubResource("Animation_ebjc6"),
+&"rest_site": SubResource("Animation_xu5ug")
+}
+
+[node name="NoctisRestSite" type="Node2D"]
+scale = Vector2(1.75, 1.75)
+script = ExtResource("1_nsbi6")
+
+[node name="Visuals" type="Sprite2D" parent="."]
+position = Vector2(139.42854, -1.1428571)
+scale = Vector2(-1, 1)
+texture = ExtResource("1_pxt6h")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Visuals")
+libraries = {
+&"": SubResource("AnimationLibrary_qe8jq")
+}
+autoplay = "rest_site"
+
+[node name="ControlRoot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 15.428571
+offset_top = -161.71428
+offset_right = 202.85713
+offset_bottom = 126.85713
+
+[node name="SelectionReticle" parent="ControlRoot" instance=ExtResource("5_t27ad")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0090001
+anchor_bottom = 0.998
+offset_left = -1.1428528
+offset_right = 0.027389526
+offset_bottom = 0.0057373047
+
+[node name="Hitbox" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 0.003
+anchor_top = -0.014
+anchor_right = 1.0300001
+anchor_bottom = 1.006
+offset_left = 0.00914073
+offset_top = 0.03999996
+offset_right = 0.09138489
+offset_bottom = -0.017150879
+
+[node name="ThoughtBubbleRight" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = 123.42857
+offset_top = 21.142838
+offset_right = 123.42857
+offset_bottom = 21.142838
+
+[node name="ThoughtBubbleLeft" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = 28.571434
+offset_top = 54.285706
+offset_right = 28.571434
+offset_bottom = 54.285713

@@ -1,0 +1,10 @@
+{
+  "NOCTIS_WARP_STRIKE.title": "Warp Strike",
+  "NOCTIS_WARP_STRIKE.description": "This card is treated as a [gold]Warp Strike[/gold].",
+  
+  "NOCTIS_ROYAL_ARMS.title": "Royal Arms",
+  "NOCTIS_ROYAL_ARMS.description": "Powerful cards that cost HP. Gain 6 [gold]Armiger[/gold] when played. They gain additional effects while [gold]Armiger[/gold] or [gold]Armiger Unleashed[/gold] is active.",
+
+  "NOCTIS_ARMIGER.title": "Armiger",
+  "NOCTIS_ARMIGER.description": "At 100, enter [gold]Armiger[/gold] form for 4 turns. \n\nGain 4 [gold]Armiger[/gold] from attacks. \nGain 5 [gold]Armiger[/gold] at the start of your turn. \n\nDuring [gold]Armiger[/gold], [gold]Warp Strike[/gold] deals 4 additional damage and \n[gold]Royal Arms[/gold] gain additional effects and no longer cost HP."
+}

@@ -1,0 +1,29 @@
+{
+  "NOCTIS-RING_OF_THE_LUCII.description": "At the end of combat, Heal HP equal to 10% of your remaining [gold]Armiger[/gold].",
+  "NOCTIS-RING_OF_THE_LUCII.flavor": "Only the True King may bear the Ring.",
+  "NOCTIS-RING_OF_THE_LUCII.title": "Ring of the Lucii",
+
+  "NOCTIS-FOUNDERS_KING_SIGIL.description": "Gain 2 additional [gold]Armiger[/gold] from Attacks, [gold]Royal Arms[/gold] and at the start of your turn. At full [gold]Armiger[/gold], enter [gold]Armiger Unleashed[/gold] for 5 turns. At the end of combat, Heal HP equal to 15% of your remaining [gold]Armiger[/gold].",
+  "NOCTIS-FOUNDERS_KING_SIGIL.flavor": "The mark of the True King.",
+  "NOCTIS-FOUNDERS_KING_SIGIL.title": "Founder's King Sigil",
+  
+  "NOCTIS-ENGINE_BLADE.description": "Gain 3 additional [gold]Armiger[/gold] from [gold]Warp Strike[/gold].",
+  "NOCTIS-ENGINE_BLADE.flavor": "Vroom Vroom",
+  "NOCTIS-ENGINE_BLADE.title": "Engine Blade",
+
+  "NOCTIS-ULTIMA_SWORD.description": "At the start of Combat, add 3 [gold]Warp Strikes[/gold] into your [gold]Hand[/gold].",
+  "NOCTIS-ULTIMA_SWORD.flavor": "",
+  "NOCTIS-ULTIMA_SWORD.title": "Ultima Blade",
+
+  "NOCTIS-ROYAL_SIGIL.description": "Start combat with 15 [gold]Armiger[/gold]. Upgrade your [gold]Armiger Arts[/gold].",
+  "NOCTIS-ROYAL_SIGIL.flavor": "",
+  "NOCTIS-ROYAL_SIGIL.title": "Royal Sigil",
+
+  "NOCTIS-CUP_NOODLES.description": "At the start of Combat, Heal [blue]3[/blue] HP.",
+  "NOCTIS-CUP_NOODLES.flavor": "It only takes 2 minutes",
+  "NOCTIS-CUP_NOODLES.title": "Cup Noodles",
+
+  "NOCTIS-LOVERS_NOTEBOOK.description": "The first time you lose [gold]HP[/gold] on your turn, heal [gold]HP[/gold] equal to the amount lost.",
+  "NOCTIS-LOVERS_NOTEBOOK.flavor": "",
+  "NOCTIS-LOVERS_NOTEBOOK.title": "Lover's Notebook"
+}

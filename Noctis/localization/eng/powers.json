@@ -1,0 +1,73 @@
+{
+  "NOCTIS-ARMIGER_POWER.description": "Increase damage of [gold]Warp Strike[/gold] by 4. [gold]Royal Arms[/gold] do not cost HP and gain additional effects.",
+  "NOCTIS-ARMIGER_POWER.smartDescription": "Increase damage of [gold]Warp Strike[/gold] by 4. [gold]Royal Arms[/gold] do not cost HP and gain additional effects.",
+  "NOCTIS-ARMIGER_POWER.title": "Armiger",
+
+  "NOCTIS-ARMIGER_UNLEASHED_POWER.description": "Increase damage of [gold]Warp Strike[/gold] by 6. [gold]Royal Arms[/gold] do not cost HP and gain additional effects.",
+  "NOCTIS-ARMIGER_UNLEASHED_POWER.smartDescription": "Increase damage of [gold]Warp Strike[/gold] by 6. [gold]Royal Arms[/gold] do not cost HP and gain additional effects.",
+  "NOCTIS-ARMIGER_UNLEASHED_POWER.title": "Armiger Unleashed",
+
+  "NOCTIS-AWAKENING_POWER.description": "Upgrade your [blue]generated[/blue] [gold]Warp Strike[/gold]. Deal damage to ALL other enemies equal to the damage dealt by [blue]generated[/blue] [gold]Warp Strike[/gold].",
+  "NOCTIS-AWAKENING_POWER.smartDescription": "Upgrade your generated [gold]Warp Strike[/gold]. Deal damage to ALL other enemies equal to the damage dealt by generated [gold]Warp Strike[/gold].",
+  "NOCTIS-AWAKENING_POWER.title": "Awakening",
+
+  "NOCTIS-ASCENSION_POWER.description": "Whenever you lose HP on your turn, deal 5 damage to ALL enemies and gain 5 [gold]Armiger[/gold].",
+  "NOCTIS-ASCENSION_POWER.smartDescription": "Whenever you lose HP on your turn, deal {Amount} damage to ALL enemies and gain {Amount} [gold]Armiger[/gold].",
+  "NOCTIS-ASCENSION_POWER.title": "Ascension",
+
+  "NOCTIS-KINGS_RESOLVE_POWER.description": "At the start of your turn, gain 1 additional [gold]Energy[/gold].",
+  "NOCTIS-KINGS_RESOLVE_POWER.smartDescription": "At the start of your turn, gain {Amount} additional [gold]Energy[/gold].",
+  "NOCTIS-KINGS_RESOLVE_POWER.title": "Kings Resolve",
+
+  "NOCTIS-POWER_OF_THE_KINGS_POWER.description": "At the start of your turn, add a [gold]Warp Strike[/gold] into your hand.",
+  "NOCTIS-POWER_OF_THE_KINGS_POWER.smartDescription": "At the start of your turn, add {Amount} [gold]Warp Strike[/gold] into your hand.",
+  "NOCTIS-POWER_OF_THE_KINGS_POWER.title": "Power Of The Kings",
+
+  "NOCTIS-WARP_STRIKE_NEXT_TURN_POWER.description": "Add a [gold]Warp Strike[/gold] into your hand next turn.",
+  "NOCTIS-WARP_STRIKE_NEXT_TURN_POWER.smartDescription": "Add {Amount} [gold]Warp Strike[/gold] into your hand next turn.",
+  "NOCTIS-WARP_STRIKE_NEXT_TURN_POWER.title": "Warp Strike Next Turn",
+
+  "NOCTIS-AFTERIMAGE_POWER.description": "When hit by an attack, deal damage back.",
+  "NOCTIS-AFTERIMAGE_POWER.smartDescription": "When hit by an attack, deal [blue]{Amount}[/blue] damage back.",
+  "NOCTIS-AFTERIMAGE_POWER.title": "Afterimage",
+
+  "NOCTIS-ARMIGER_ARTS_READY_POWER.description": "Perform its corresponding [gold]Armiger Arts[/gold] instead of its original effect during [gold]Armiger[/gold]. You can only use 1 [gold]Armiger Arts[/gold] per turn.",
+  "NOCTIS-ARMIGER_ARTS_READY_POWER.smartDescription": "You can use 1 [gold]Armiger Arts[/gold] per turn.",
+  "NOCTIS-ARMIGER_ARTS_READY_POWER.title": "Armiger Arts",
+
+  "NOCTIS-THE_TRUE_KING_POWER.description": "The first [gold]Warp Strike[/gold] you play deal additional damage.",
+  "NOCTIS-THE_TRUE_KING_POWER.smartDescription": "The first [gold]Warp Strike[/gold] you play you deal {Amount} additional damage.",
+  "NOCTIS-THE_TRUE_KING_POWER.title": "The True King",
+
+  "NOCTIS-KINGS_LEGACY_POWER.description": "The first time you play [gold]Royal Arms[/gold] each turn, draw 1 card.",
+  "NOCTIS-KINGS_LEGACY_POWER.smartDescription": "The first time you play [gold]Royal Arms[/gold] each turn, draw {Amount} {Amount:plural:card|cards}.",
+  "NOCTIS-KINGS_LEGACY_POWER.title": "King's Legacy",
+
+  "NOCTIS-DYNASTIC_STANCE_POWER.description": "Whenever you play [gold]Royal Arms[/gold], gain [gold]Strength[/gold].",
+  "NOCTIS-DYNASTIC_STANCE_POWER.smartDescription": "Whenever you play [gold]Royal Arms[/gold], gain {Amount} [gold]Strength[/gold].",
+  "NOCTIS-DYNASTIC_STANCE_POWER.title": "Dynastic Stance",
+
+  "NOCTIS-CROSS_CHAIN_POWER.description": "The first [gold]Royal Arms[/gold] you play this turn is played twice.",
+  "NOCTIS-CROSS_CHAIN_POWER.smartDescription": "The first {Amount} [gold]Royal Arms[/gold] you play this turn is played twice.",
+  "NOCTIS-CROSS_CHAIN_POWER.title": "Cross Chain",
+
+  "NOCTIS-OVERTHROW_POWER.description": "At the start of your turn, add 1 random card into your [gold]Hand[/gold]. It gains [gold]Ethereal[/gold].",
+  "NOCTIS-OVERTHROW_POWER.smartDescription": "At the start of your turn, add {Amount} random {Amount:plural:card|cards} into your [gold]Hand[/gold]. {Amount:plural:It gains|They gain} [gold]Ethereal[/gold].",
+  "NOCTIS-OVERTHROW_POWER.title": "Overthrow",
+
+  "NOCTIS-HOLY_POWER.description": "Blocked damage is reflected to your attacker for 1 turn.",
+  "NOCTIS-HOLY_POWER.smartDescription": "Blocked damage is reflected to your attacker for 1 turn.",
+  "NOCTIS-HOLY_POWER.title": "Holy",
+
+  "NOCTIS-ARMIGER_MASTERY_POWER.description": "[gold]Royal Arms[/gold] gain retain. At the start of your turn, add 1 [gold]Royal Arms[/gold] from your [gold]Discard Pile[/gold] into your hand and [gold]Upgrade[/gold] it.",
+  "NOCTIS-ARMIGER_MASTERY_POWER.smartDescription": "[gold]Royal Arms[/gold] gain retain. At the start of your turn, add {Amount} [gold]Royal Arms[/gold] from your [gold]Discard Pile[/gold] into your hand and [gold]Upgrade[/gold] {Amount:plural:it|them}.",
+  "NOCTIS-ARMIGER_MASTERY_POWER.title": "Armiger Mastery",
+
+  "NOCTIS-RINGS_BLESSING_POWER.description": "At the start of your turn, lose HP and gain [gold]Block[/gold].",
+  "NOCTIS-RINGS_BLESSING_POWER.smartDescription": "At the start of your turn, lose [blue]{SelfDamage}[/blue] HP and gain [blue]{Amount}[/blue] [gold]Block[/gold].",
+  "NOCTIS-RINGS_BLESSING_POWER.title": "Rings Blessing",
+
+  "NOCTIS-KINGSGUARD_POWER.description": "Gain [gold]Block[/gold] whenever you play [gold]Royal Arms[/gold].",
+  "NOCTIS-KINGSGUARD_POWER.smartDescription": "Gain {Amount} [gold]Block[/gold] whenever you play [gold]Royal Arms[/gold].",
+  "NOCTIS-KINGSGUARD_POWER.title": "Kingsguard"
+}
