@@ -72,8 +72,8 @@ public static class NoctisExtensions
             Creature target,
             string? attackSfx = null,
             string? hitSfx = null,
-            string? vfxTscn = null,
-            string? hitVfx = null)
+            string? hitVfx = null,
+            bool playHitVfx = true)
         {
             if (target == null)
                 return;
@@ -86,27 +86,18 @@ public static class NoctisExtensions
 
             var noctis = attacker.Player.Character as Character.Noctis;
 
-            string? resolvedHitVfx = hitVfx switch
-            {
-                null => DefaultHitVfx,   // default "hit"
-                NoHitVfx => null,        // disable VFX
-                _ => hitVfx              // custom VFX
-            };
-
-            if (resolvedHitVfx != null)
+            if (playHitVfx)
             {
                 noctis.PlayVfxOnTarget(
                     target,
-                    vfxTscn ?? DefaultHitVfxScene,
-                    resolvedHitVfx);
+                    DefaultHitVfxScene,
+                    hitVfx ?? DefaultHitVfx);
             }
 
             await CreatureCmd.TriggerAnim(target, "Hit", 0f);
 
             if (target.Monster?.HasHurtSfx == true)
-            {
                 SfxCmd.Play(target.Monster.HurtSfx);
-            }
         }
     }
 }

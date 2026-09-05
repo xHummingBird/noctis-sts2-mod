@@ -22,10 +22,10 @@ namespace Noctis.NoctisCode.Relics;
 public abstract class ArmigerRelicBase : NoctisRelic
 {
     // ---------- Override values ----------
-    protected virtual int BaseTurnArmigerGain => 5;
-    protected virtual int BaseAttackArmigerGain => 3;
-    protected virtual int WarpStrikeArmigerGain => 6;
-    protected virtual int RoyalArmsArmigerGain => 6;
+    protected virtual int BaseTurnArmigerGain => 4;
+    protected virtual int BaseAttackArmigerGain => 4;
+    protected virtual int WarpStrikeArmigerGain => 7;
+    protected virtual int RoyalArmsArmigerGain => 7;
     
     protected virtual int EndCombatHealPercent => 10;
 
@@ -106,7 +106,7 @@ public abstract class ArmigerRelicBase : NoctisRelic
         }
 
         if (card is IRoyalArmsCard)
-            return RoyalArmsArmigerGain;
+            return RoyalArmsArmigerGain + Owner.Creature.GetPowerAmount<ArmigerMasteryPower>();
 
         if (card.Type == CardType.Attack)
             return BaseAttackArmigerGain;

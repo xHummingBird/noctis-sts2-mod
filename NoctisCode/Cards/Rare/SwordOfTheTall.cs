@@ -56,7 +56,7 @@ public class SwordOfTheTall() : NoctisCard(2, CardType.Attack,
         }
         
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).Targeting(play.Target)
-            .WithValueProp(ValueProp.Unpowered)
+            .WithValueProp(ValueProp.Move)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
     }

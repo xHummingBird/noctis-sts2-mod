@@ -11,8 +11,8 @@ using Noctis.NoctisCode.Extensions;
 
 namespace Noctis.NoctisCode.Cards.Uncommon;
 
-public class RoyalRecovery() : NoctisCard(0, CardType.Attack,
-    CardRarity.Uncommon, TargetType.AnyEnemy)
+public class RoyalRecovery() : NoctisCard(0, CardType.Skill,
+    CardRarity.Uncommon, TargetType.Self)
 {
     protected override bool ShouldGlowGoldInternal => LostHpThisTurn(base.Owner.Creature);
 

@@ -46,7 +46,7 @@ public class LegacyOfTheLucii() : NoctisCard(0, CardType.Attack,
                 await Task.Delay((int)(0.067f * 1000f));
             SfxCmd.Play("res://Noctis/sfx/warp.wav");
             await Task.Delay((int)(0.2f * 1000f));
-            await noctis.DashTo(ownerCreature, play.Target, distance: 300f, durationSeconds: 0.001f,
+            await noctis.DashTo(ownerCreature, play.Target, distance: 260f, durationSeconds: 0.001f,
                 overrideAnim: "warp_strike");
             await Task.Delay((int)(0.099f * 1000f));
             if (base.Owner.HasPower<ArmigerUnleashedPower>())
@@ -94,6 +94,7 @@ public class LegacyOfTheLucii() : NoctisCard(0, CardType.Attack,
                 noctis.PlayAnimation(ownerCreature, "retreat_armiger_2");
                 await PowerCmd.Remove<ArmigerPower>(ownerCreature);
                 await Task.Delay((int)(0.223f * 1000f));
+                noctis.PlayAnimation(ownerCreature, "idle");
             }
             else if (Owner.HasPower<ArmigerUnleashedPower>())
             {
@@ -103,6 +104,7 @@ public class LegacyOfTheLucii() : NoctisCard(0, CardType.Attack,
                 noctis.PlayAnimation(ownerCreature, "retreat_unleashed_2");
                 await PowerCmd.Remove<ArmigerUnleashedPower>(ownerCreature);
                 await Task.Delay((int)(0.3f * 1000f));
+                noctis.PlayAnimation(ownerCreature, "idle");
             }
             ArmigerManager.SetArmiger(Owner, 0);
         }

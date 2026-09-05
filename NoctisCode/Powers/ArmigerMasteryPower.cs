@@ -26,23 +26,4 @@ public class ArmigerMasteryPower : NoctisPower
         }
         return Task.CompletedTask;
     }
-    
-    public override async Task BeforeSideTurnStart(PlayerChoiceContext choiceContext, CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
-    {
-        if (!participants.Contains(base.Owner))
-        {
-            return;
-        }
-        CardPile pile = PileType.Discard.GetPile(base.Owner.Player);
-        IEnumerable<CardModel> source = pile.Cards.Where((CardModel c) => c is IRoyalArmsCard);
-        IEnumerable<CardModel> enumerable = source.ToList().UnstableShuffle(base.Owner.Player.RunState.Rng.CombatCardSelection).Take(base.Amount);
-        foreach (CardModel card in enumerable)
-        {
-            await CardPileCmd.Add(card, PileType.Hand);
-            if (card.IsUpgradable)
-            {
-                CardCmd.Upgrade(card);
-            }
-        }
-    }
 }

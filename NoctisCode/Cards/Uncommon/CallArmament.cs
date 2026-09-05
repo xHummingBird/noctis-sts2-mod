@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Models;
 using Noctis.NoctisCode.Character;
 using Noctis.NoctisCode.Mechanic.Armiger;
 
-namespace Noctis.NoctisCode.Cards.Rare;
+namespace Noctis.NoctisCode.Cards.Uncommon;
 
 public class CallArmament() : NoctisCard(1, CardType.Skill,
     CardRarity.Uncommon, TargetType.Self)

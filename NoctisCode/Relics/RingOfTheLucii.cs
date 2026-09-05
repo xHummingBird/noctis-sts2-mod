@@ -13,8 +13,8 @@ public sealed class RingOfTheLucii : ArmigerRelicBase
 
     public override RelicRarity Rarity => RelicRarity.Starter;
 
-    protected override int BaseTurnArmigerGain => 5;
-    protected override int BaseAttackArmigerGain => 5;
+    protected override int BaseTurnArmigerGain => 4;
+    protected override int BaseAttackArmigerGain => 4;
 
     protected override int WarpStrikeArmigerGain => 7;
     protected override int RoyalArmsArmigerGain => 7;

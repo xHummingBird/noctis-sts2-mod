@@ -52,7 +52,7 @@ public class DoubleWarp() : NoctisCard(1, CardType.Attack,
             await Task.Delay((int)(0.132f * 1000f));
             SfxCmd.Play("res://Noctis/sfx/slash (1).wav");
             await Task.Delay((int)(0.067f * 1000f));
-            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, NoctisExtensions.CombatHelpers.NoHitVfx);
+            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, playHitVfx: false);
             await Task.Delay((int)(0.333f * 1000f));
             if (unleashed)
                 await Task.Delay((int)(0.134f * 1000f));

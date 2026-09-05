@@ -12,7 +12,7 @@ using Noctis.NoctisCode.Extensions;
 using Noctis.NoctisCode.Mechanic.WarpStrike;
 using Noctis.NoctisCode.Powers;
 
-namespace Noctis.NoctisCode.Cards.Common;
+namespace Noctis.NoctisCode.Cards.Uncommon;
 
 public class WarpChain() : NoctisCard(2, CardType.Attack,
     CardRarity.Uncommon, TargetType.AnyEnemy), IWarpStrikeCard
@@ -28,7 +28,7 @@ public class WarpChain() : NoctisCard(2, CardType.Attack,
     
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(10, ValueProp.Move),
+        new DamageVar(11, ValueProp.Move),
         new EnergyVar(1)
     ];
 
@@ -61,7 +61,7 @@ public class WarpChain() : NoctisCard(2, CardType.Attack,
             await Task.Delay((int)(0.132f * 1000f));
             SfxCmd.Play("res://Noctis/sfx/slash (1).wav");
             await Task.Delay((int)(0.067f * 1000f));
-            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, NoctisExtensions.CombatHelpers.NoHitVfx);
+            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, playHitVfx: false);
             await Task.Delay((int)(0.333f * 1000f));
             if (unleashed)
                 await Task.Delay((int)(0.134f * 1000f));
@@ -95,12 +95,13 @@ public class WarpChain() : NoctisCard(2, CardType.Attack,
         CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
     
-    public override Task BeforeCardPlayed(CardPlay cardPlay)
+    public override Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        if (!HasPlayedWarpThisTurn)
+        if (cardPlay.Card.Owner != Owner)
             return Task.CompletedTask;
 
-        ReduceCost();
+        if (cardPlay.Card is IWarpStrikeCard)
+            ReduceCost();
 
         return Task.CompletedTask;
     }

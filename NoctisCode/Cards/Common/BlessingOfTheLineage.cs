@@ -1,17 +1,14 @@
 ﻿using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.ValueProps;
 using Noctis.NoctisCode.Extensions;
-using Noctis.NoctisCode.Mechanics.Armiger;
 
-namespace Noctis.NoctisCode.Cards.Uncommon;
+namespace Noctis.NoctisCode.Cards.Common;
 
 //Resource Card
 public class BlessingOfTheLineage() : NoctisCard(0, CardType.Skill,
-    CardRarity.Uncommon, TargetType.Self)
+    CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
@@ -32,6 +29,6 @@ public class BlessingOfTheLineage() : NoctisCard(0, CardType.Skill,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Energy.UpgradeValueBy(1m);
+        AddKeyword(CardKeyword.Retain);
     }
 }

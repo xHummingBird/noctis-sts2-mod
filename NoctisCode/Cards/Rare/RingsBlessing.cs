@@ -21,12 +21,12 @@ public class RingsBlessing() : NoctisCard(2, CardType.Power,
     {
         AudioHelper.PlayRandomDefend();
 
-        await PowerCmd.Apply<RingsBlessingPower>(
+        (await PowerCmd.Apply<RingsBlessingPower>(
             choiceContext,
             base.Owner.Creature,
             DynamicVars["RingsBlessingPower"].BaseValue,
             base.Owner.Creature,
-            this);
+            this))?.IncrementSelfDamage();;
     }
 
     protected override void OnUpgrade()

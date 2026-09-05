@@ -50,14 +50,14 @@ public class RoyalCleave() : NoctisCard(0, CardType.Attack,
             {
                 noctis.PlayAnimation(ownerCreature, "royal_cleave_unleashed");
                 await Task.Delay((int)(0.167f * 1000f));
-                await noctis.DashTo(ownerCreature, leftMostEnemy, distance: 430f, durationSeconds: 0.033f,
+                await noctis.DashTo(ownerCreature, leftMostEnemy, distance: 520f, durationSeconds: 0.033f,
                     overrideAnim: "royal_cleave_unleashed");
             }
             else
             {
                 noctis.PlayAnimation(ownerCreature, "royal_cleave");
                 await Task.Delay((int)(0.167f * 1000f));
-                await noctis.DashTo(ownerCreature, leftMostEnemy, distance: 430f, durationSeconds: 0.033f,
+                await noctis.DashTo(ownerCreature, leftMostEnemy, distance: 520f, durationSeconds: 0.033f,
                     overrideAnim: "royal_cleave");
             }
 

@@ -2,13 +2,12 @@
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using Noctis.NoctisCode.Extensions;
 using Noctis.NoctisCode.Powers;
 
 namespace Noctis.NoctisCode.Cards.Uncommon;
 
-public class ArmigerMastery() : NoctisCard(1, CardType.Power,
+public class ArmigerMastery() : NoctisCard(2, CardType.Power,
     CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -22,13 +21,13 @@ public class ArmigerMastery() : NoctisCard(1, CardType.Power,
         await PowerCmd.Apply<ArmigerMasteryPower>(
             choiceContext,
             base.Owner.Creature,
-            1,
+            3,
             base.Owner.Creature,
             this);
     }
 
     protected override void OnUpgrade()
     {
-        AddKeyword(CardKeyword.Innate);
+        base.EnergyCost.UpgradeBy(-1);
     }
 }

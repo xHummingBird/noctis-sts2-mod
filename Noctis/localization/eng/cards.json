@@ -36,7 +36,7 @@
   "NOCTIS-KINGS_BURDEN.title": "The King's Burden",
 
   "NOCTIS-OVERLOAD.description": "Add {Cards:diff()} [gold]Warp Strike[/gold] into your hand. \nYou cannot draw additional cards this turn.",
-  "NOCTIS-OVERLOAD.title": "Overload",
+  "NOCTIS-OVERLOAD.title": "Overextend",
 
   "NOCTIS-THE_KINGS_VASSALS.description": "Deal {Damage:diff()} damage 2 times. \nPlay a random [gold]Attack[/gold] from your [gold]Draw Pile[/gold].",
   "NOCTIS-THE_KINGS_VASSALS.title": "The King's Vassals",
@@ -50,7 +50,7 @@
   "NOCTIS-CROSS_CHAIN.description": "The first [gold]Royal Arms[/gold] you play each turn is played twice.",
   "NOCTIS-CROSS_CHAIN.title": "Cross Chain",
 
-  "NOCTIS-PLUNGE.description": "Deal {Damage:diff()} damage. \nDraw {Cards:diff()} {Cards:plural:card|cards}",
+  "NOCTIS-PLUNGE.description": "Deal {Damage:diff()} damage. \nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "NOCTIS-PLUNGE.title": "Plunge",
 
   "NOCTIS-KATANA_OF_THE_WARRIOR.description": "Lose 2 HP. \nDeal {Damage:diff()} damage for each Attack already played this turn. \n{ArmigerIcon}: Deal 50% more damage. {InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
@@ -65,7 +65,7 @@
   "NOCTIS-BLESSING_OF_THE_LINEAGE.description": "Gain {Energy:energyIcons()}.",
   "NOCTIS-BLESSING_OF_THE_LINEAGE.title": "Blessing Of The Lineage",
 
-  "NOCTIS-ARMIGER_CHARGE.description": "Gain {Armiger:diff()} [gold]Armiger[/gold].",
+  "NOCTIS-ARMIGER_CHARGE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nGain {Armiger:diff()} [gold]Armiger[/gold].",
   "NOCTIS-ARMIGER_CHARGE.title": "Armiger Charge",
 
   "NOCTIS-FLAME_WARP.description": "Deal {Damage:diff()} damage. \nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
@@ -149,7 +149,7 @@
   "NOCTIS-DYNASTIC_STANCE.description": "Whenever you play a [gold]Royal Arms[/gold], gain {DynasticStancePower:diff()} [gold]Strength[/gold].",
   "NOCTIS-DYNASTIC_STANCE.title": "Dynastic Stance",
 
-  "NOCTIS-AWAKENING.description": "Add {AwakeningPower:diff()} [gold]Warp Strike[/gold] into your Hand. \nUpgrade your [blue]generated[/blue] [gold]Warp Strike[/gold]. \nDeal damage to ALL other enemies equal to the damage dealt by [blue]generated[/blue] [gold]Warp Strike[/gold].",
+  "NOCTIS-AWAKENING.description": "Add {AwakeningPower:diff()} [gold]Warp Strike[/gold] into your Hand. \n[blue]Generated[/blue] [gold]Warp Strike[/gold] is [blue]upgraded[/blue] and deals damage to ALL other enemies equal to the damage dealt.",
   "NOCTIS-AWAKENING.title": "Awakening",
 
   "NOCTIS-ARMIGER_STORM.description": "Deal {Damage:diff()} damage to ALL enemies. \nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold]. \nApply {WeakPower:diff()} [gold]Weak[/gold].",
@@ -191,7 +191,7 @@
   "NOCTIS-CALL_ARMAMENT.description": "Add a random [gold]Royal Arms[/gold]. \nIt's free to play this turn.",
   "NOCTIS-CALL_ARMAMENT.title": "Call Armament",
 
-  "NOCTIS-ARMIGER_MASTERY.description": "[gold]Royal Arms[/gold] gain [gold]Retain[/gold]. \nAt the start of your turn, put a random [gold]Royal Arms[/gold] from your Discard Pile into your Hand and [gold]Upgrade[/gold] it.",
+  "NOCTIS-ARMIGER_MASTERY.description": "[gold]Royal Arms[/gold] gain [gold]Retain[/gold]. \nGain 3 additional [gold]Armiger[/gold] when you play [gold]Royal Arms[/gold].",
   "NOCTIS-ARMIGER_MASTERY.title": "Armiger Mastery",
   
   "NOCTIS-ROYAL_RECOVERY.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you lost [gold]HP[/gold] this turn, gain [gold]Block[/gold] another time.",
@@ -212,10 +212,10 @@
   "NOCTIS-KINGSGUARD.description": "Gain {KingsguardPower:diff()} [gold]Block[/gold] whenever you play [gold]Royal Arms[/gold].",
   "NOCTIS-KINGSGUARD.title": "Kingsguard",
 
-  "NOCTIS-ARMIGER_ONSLAUGHT.description": "[gold]Exhaust[/gold] your [gold]Royal Arms[/gold] in your Hand. \nDeal {ExtraDamage:diff()} damage to ALL enemies for each card [gold]Exhausted[/gold].",
+  "NOCTIS-ARMIGER_ONSLAUGHT.description": "[gold]Exhaust[/gold] your [gold]Royal Arms[/gold] in your Hand. \nDeal {Damage:diff()} damage to ALL enemies for each card [gold]Exhausted[/gold].{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
   "NOCTIS-ARMIGER_ONSLAUGHT.title": "Armiger Onslaught",
 
-  "NOCTIS-APOCALYPSIS.description": "Deal {ExtraDamage:diff()} damage for every [gold]Royal Arms[/gold] you play this combat.{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
+  "NOCTIS-APOCALYPSIS.description": "Deal {Damage:diff()} damage for each [gold]Royal Arms[/gold] you have played this combat.{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
   "NOCTIS-APOCALYPSIS.title": "Apocalypsis",
 
   "NOCTIS-WARP_CHAIN.description": "Deal {Damage:diff()} damage. \nThis card costs 0 {Energy:energyIcons()} if you played [gold]Warp Strike[/gold] this turn.",

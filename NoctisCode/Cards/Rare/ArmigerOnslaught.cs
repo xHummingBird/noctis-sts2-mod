@@ -1,4 +1,5 @@
-﻿using BaseLib.Utils;
+﻿using BaseLib.Extensions;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -16,8 +17,12 @@ namespace Noctis.NoctisCode.Cards.Rare;
 public class ArmigerOnslaught() : NoctisCard(2, CardType.Attack,
     CardRarity.Rare, TargetType.AllEnemies)
 {
+    protected override bool ShouldGlowGoldInternal =>
+        PileType.Hand.GetPile(Owner).Cards.Count(c => c is IRoyalArmsCard) >= 1;
+    
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
+        new DamageVar(12m, ValueProp.Move),
         new CalculationBaseVar(0m),
         new ExtraDamageVar(12m),
         new CalculatedDamageVar(ValueProp.Move).WithMultiplier((CardModel card, Creature? _) => PileType.Hand.GetPile(card.Owner).Cards.Count(c => c is IRoyalArmsCard))
@@ -37,7 +42,14 @@ public class ArmigerOnslaught() : NoctisCard(2, CardType.Attack,
             .Cards
             .Where(c => c is IRoyalArmsCard)
             .ToList();
+        var multiplier = royalArms.Count;
         
+        var damage = DynamicVars.Damage.BaseValue * multiplier;
+        
+        foreach (var card in royalArms)
+        {
+            await CardCmd.Exhaust(choiceContext, card);
+        }
         var enemies = CombatState.HittableEnemies.ToList();
         var ownerCreature = Owner?.Creature;
         var noctis = Owner?.Character as Character.Noctis;
@@ -70,16 +82,14 @@ public class ArmigerOnslaught() : NoctisCard(2, CardType.Attack,
             SfxCmd.Play("res://Noctis/sfx/armiger_close.wav");
             
             await Task.Delay(133);
-            await CommonActions.CardAttack(this, play.Target)
+            await DamageCmd.Attack(damage).FromCard(this, play).TargetingAllOpponents(base.CombatState)
+                .WithValueProp(ValueProp.Move)
                 .Execute(choiceContext);
 
             await Task.Delay(933);
             CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
         }
-        foreach (var card in royalArms)
-        {
-            await CardCmd.Exhaust(choiceContext, card);
-        }
+        
     }
     
     protected override void OnUpgrade()

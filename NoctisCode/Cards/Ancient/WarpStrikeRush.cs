@@ -57,7 +57,7 @@ public class WarpStrikeRush() : NoctisCard(1, CardType.Attack,
             float duration = noctis.PlayAnimation(ownerCreature, "armiger_chain").total;
             SfxCmd.Play("res://Noctis/sfx/warp.wav");
             await Task.Delay((int)(0.234f * 1000f));
-            await noctis.DashTo(ownerCreature, play.Target, distance: 300f, durationSeconds: 0.066f,
+            await noctis.DashTo(ownerCreature, play.Target, distance: 260f, durationSeconds: 0.066f,
                 overrideAnim: "armiger_chain");
             await Task.Delay((int)(0.067f * 1000f));
             SfxCmd.Play("res://Noctis/sfx/shift_attack.wav");

@@ -8,16 +8,16 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 using Noctis.NoctisCode.Extensions;
 
-namespace Noctis.NoctisCode.Cards.Uncommon;
+namespace Noctis.NoctisCode.Cards.Common;
 
 public class RevengeSlash() : NoctisCard(0, CardType.Attack,
-    CardRarity.Uncommon, TargetType.AnyEnemy)
+    CardRarity.Common, TargetType.AnyEnemy)
 {
     protected override bool ShouldGlowGoldInternal => LostHpThisTurn(base.Owner.Creature);
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(5m, ValueProp.Move),
+        new DamageVar(4m, ValueProp.Move),
         new RepeatVar(2)
     ];
     

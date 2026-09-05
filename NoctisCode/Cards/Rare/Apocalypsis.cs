@@ -32,6 +32,7 @@ public class Apocalypsis() : NoctisCard(2, CardType.Attack, CardRarity.Rare, Tar
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new CalculationBaseVar(0m),
+        new DamageVar(6m, ValueProp.Move),
         new ExtraDamageVar(6m),
         new CalculatedDamageVar(ValueProp.Move)
             .WithMultiplier((card, _) =>
@@ -96,6 +97,7 @@ public class Apocalypsis() : NoctisCard(2, CardType.Attack, CardRarity.Rare, Tar
 
     protected override void OnUpgrade()
     {
+        DynamicVars.Damage.UpgradeValueBy(2m);
         DynamicVars.ExtraDamage.UpgradeValueBy(2m);
     }
 }

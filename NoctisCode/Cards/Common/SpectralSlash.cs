@@ -31,7 +31,7 @@ public class SpectralSlash() : NoctisCard(2, CardType.Attack,
     
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(12, ValueProp.Move),
+        new DamageVar(10, ValueProp.Move),
         new EnergyVar(1)
     ];
 
@@ -87,12 +87,13 @@ public class SpectralSlash() : NoctisCard(2, CardType.Attack,
         CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
     
-    public override Task BeforeCardPlayed(CardPlay cardPlay)
+    public override Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        if (!HasPlayedRoyalArmThisTurn)
+        if (cardPlay.Card.Owner != Owner)
             return Task.CompletedTask;
 
-        ReduceCost();
+        if (cardPlay.Card is IRoyalArmsCard)
+            ReduceCost();
 
         return Task.CompletedTask;
     }

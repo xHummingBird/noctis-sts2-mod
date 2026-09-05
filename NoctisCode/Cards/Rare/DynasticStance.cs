@@ -3,14 +3,13 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using Noctis.NoctisCode.Cards.Token;
 using Noctis.NoctisCode.Extensions;
 using Noctis.NoctisCode.Powers;
 
-namespace Noctis.NoctisCode.Cards.Uncommon;
+namespace Noctis.NoctisCode.Cards.Rare;
 
 public class DynasticStance() : NoctisCard(1, CardType.Power,
-    CardRarity.Uncommon, TargetType.Self)
+    CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [

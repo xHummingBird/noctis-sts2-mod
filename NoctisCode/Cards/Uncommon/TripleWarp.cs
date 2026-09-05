@@ -57,7 +57,7 @@ public class TripleWarp() : NoctisCard(2, CardType.Attack,
             if (!unleashed)
                 await Task.Delay((int)(0.067f * 1000f));
             else await Task.Delay((int)(0.033f * 1000f));
-            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, NoctisExtensions.CombatHelpers.NoHitVfx);
+            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, playHitVfx: false);
             if (!unleashed)
             {
                 await Task.Delay((int)(0.133f * 1000f));
@@ -69,7 +69,7 @@ public class TripleWarp() : NoctisCard(2, CardType.Attack,
             if (!unleashed)
                 await Task.Delay((int)(0.067f * 1000f));
             else await Task.Delay((int)(0.033f * 1000f));
-            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, NoctisExtensions.CombatHelpers.NoHitVfx);
+            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, playHitVfx: false);
             await Task.Delay((int)(0.200f * 1000f));
             if (armiger)
                 await Task.Delay((int)(0.133f * 1000f));

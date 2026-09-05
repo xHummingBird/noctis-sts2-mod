@@ -7,10 +7,10 @@ using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using Noctis.NoctisCode.Extensions;
 
-namespace Noctis.NoctisCode.Cards.Uncommon;
+namespace Noctis.NoctisCode.Cards.Common;
 
 public class Blink() : NoctisCard(1, CardType.Skill,
-    CardRarity.Uncommon, TargetType.Self)
+    CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move), new EnergyVar(1)];
 

@@ -39,47 +39,83 @@ public class RoyalReckoning() : NoctisCard(2, CardType.Attack,
         CardPlay play)
     {
         bool armiger = Owner.Creature.HasPower<ArmigerPower>();
-        
+        bool unleashed = Owner.Creature.HasPower<ArmigerUnleashedPower>();
+
         var ownerCreature = Owner?.Creature;
         var noctis = Owner?.Character as Character.Noctis;
         CenterCardCinematic.Start(RunManager.Instance.NetService.NetId);
         if (ownerCreature != null && noctis != null)
         {
             AudioHelper.PlayRandomPhrase();
-            float duration = noctis.PlayAnimation(ownerCreature, "warp_strike").total;
-            if (Owner.Creature.HasPower<ArmigerPower>())
+            float duration = noctis.PlayAnimation(ownerCreature, "triple_warp").total;
+            if (armiger)
                 await Task.Delay((int)(0.067f * 1000f));
             SfxCmd.Play("res://Noctis/sfx/warp.wav");
+            if (unleashed)
+                await Task.Delay((int)(0.067f * 1000f));
             await Task.Delay((int)(0.2f * 1000f));
-            await noctis.DashTo(ownerCreature, play.Target, distance: 300f, durationSeconds: 0.001f, overrideAnim: "warp_strike");
-            await Task.Delay((int)(0.199f * 1000f));
+            await noctis.DashTo(ownerCreature, play.Target, distance: 300f, durationSeconds: 0.001f,
+                overrideAnim: "triple_warp");
+            if (!unleashed)
+            {
+                await Task.Delay((int)(0.199f * 1000f));
+            }
+            else await Task.Delay((int)(0.099f * 1000f));
+
             SfxCmd.Play("res://Noctis/sfx/slash (1).wav");
-            await Task.Delay((int)(0.067f * 1000f));
+            if (!unleashed)
+                await Task.Delay((int)(0.067f * 1000f));
+            else await Task.Delay((int)(0.033f * 1000f));
+            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, playHitVfx: false);
+            if (!unleashed)
+            {
+                await Task.Delay((int)(0.133f * 1000f));
+                if (armiger)
+                    await Task.Delay((int)(0.034f * 1000f));
+            }
+            else await Task.Delay((int)(0.467f * 1000f));
+
+            SfxCmd.Play("res://Noctis/sfx/slash (2).wav");
+            if (!unleashed)
+                await Task.Delay((int)(0.067f * 1000f));
+            else await Task.Delay((int)(0.033f * 1000f));
+            NoctisExtensions.CombatHelpers.NoctisFakeHit(ownerCreature, play.Target, null, null, playHitVfx: false);
+            await Task.Delay((int)(0.200f * 1000f));
+            if (armiger)
+                await Task.Delay((int)(0.133f * 1000f));
+            if (unleashed)
+                await Task.Delay((int)(0.500f * 1000f));
         }
+
         CommonActions.CardAttack(this, play.Target)
-            .WithHitFx(null)
+            .WithHitFx(null, "res://Noctis/sfx/slash (3).wav")
             .Execute(choiceContext);
-        await Task.Delay((int)(0.3f * 1000f));
+        await Task.Delay((int)(0.267f * 1000f));
         if (ownerCreature != null && noctis != null)
         {
-            if (base.Owner.HasPower<ArmigerPower>())
+            if (armiger)
             {
-                await noctis.Retreat(ownerCreature, "warp_strike", false, 0.1f);
+                await Task.Delay((int)(0.033f * 1000f));
+                SfxCmd.Play("res://Noctis/sfx/weapon_disappear_1.wav");
+                await Task.Delay((int)(0.567f * 1000f));
+                await noctis.Retreat(ownerCreature, null, false, 0.1f);
                 noctis.PlayAnimation(ownerCreature, "retreat_armiger_2");
                 await Task.Delay((int)(0.233f * 1000f));
             }
-            else if (base.Owner.HasPower<ArmigerUnleashedPower>())
+            else if (unleashed)
             {
-                await noctis.Retreat(ownerCreature, "warp_strike", false, 0.1f);
+                await Task.Delay((int)(0.233f * 1000f));
+                await noctis.Retreat(ownerCreature, null, false, 0.1f);
                 noctis.PlayAnimation(ownerCreature, "retreat_unleashed");
                 await Task.Delay((int)(0.3f * 1000f));
             }
             else
                 await noctis.Retreat(ownerCreature);
         }
+
         CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
-    
+
     protected override void OnUpgrade()
     {
         DynamicVars.ExtraDamage.UpgradeValueBy(2);

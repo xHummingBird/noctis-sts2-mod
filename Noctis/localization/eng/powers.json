@@ -59,8 +59,8 @@
   "NOCTIS-HOLY_POWER.smartDescription": "Blocked damage is reflected to your attacker for 1 turn.",
   "NOCTIS-HOLY_POWER.title": "Holy",
 
-  "NOCTIS-ARMIGER_MASTERY_POWER.description": "[gold]Royal Arms[/gold] gain retain. At the start of your turn, add 1 [gold]Royal Arms[/gold] from your [gold]Discard Pile[/gold] into your hand and [gold]Upgrade[/gold] it.",
-  "NOCTIS-ARMIGER_MASTERY_POWER.smartDescription": "[gold]Royal Arms[/gold] gain retain. At the start of your turn, add {Amount} [gold]Royal Arms[/gold] from your [gold]Discard Pile[/gold] into your hand and [gold]Upgrade[/gold] {Amount:plural:it|them}.",
+  "NOCTIS-ARMIGER_MASTERY_POWER.description": "[gold]Royal Arms[/gold] gain retain. Gain 3 additional [gold]Armiger[/gold] when you play [gold]Royal Arms[/gold].",
+  "NOCTIS-ARMIGER_MASTERY_POWER.smartDescription": "[gold]Royal Arms[/gold] gain retain. Gain {Amount} additional [gold]Armiger[/gold] when you play [gold]Royal Arms[/gold].",
   "NOCTIS-ARMIGER_MASTERY_POWER.title": "Armiger Mastery",
 
   "NOCTIS-RINGS_BLESSING_POWER.description": "At the start of your turn, lose HP and gain [gold]Block[/gold].",

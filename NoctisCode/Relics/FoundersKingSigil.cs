@@ -13,8 +13,8 @@ public sealed class FoundersKingSigil : ArmigerRelicBase
     
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    protected override int BaseTurnArmigerGain => 7;
-    protected override int BaseAttackArmigerGain => 7;
+    protected override int BaseTurnArmigerGain => 6;
+    protected override int BaseAttackArmigerGain => 6;
 
     protected override int WarpStrikeArmigerGain => 9;
     protected override int RoyalArmsArmigerGain => 9;
