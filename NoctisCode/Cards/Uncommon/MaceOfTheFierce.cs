@@ -48,9 +48,9 @@ public class MaceOfTheFierce() : NoctisCard(1, CardType.Attack,
         await CommonActions.CardAttack(this, play.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
-        CreatureCmd.GainBlock(base.Owner.Creature, blockAmount, ValueProp.Unpowered, play, false);
+        await CreatureCmd.GainBlock(base.Owner.Creature, blockAmount, ValueProp.Unpowered, play, false);
         if (ownerCreature.HasPower<ArmigerPower>() || ownerCreature.HasPower<ArmigerUnleashedPower>())
-            CreatureCmd.GainBlock(base.Owner.Creature, blockAmount, ValueProp.Unpowered, play, false);
+            await CreatureCmd.GainBlock(base.Owner.Creature, blockAmount, ValueProp.Unpowered, play, false);
     }
     
     protected override void OnUpgrade()

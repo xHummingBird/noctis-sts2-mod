@@ -1,0 +1,8 @@
+{
+  "NOCTIS_ARMIGER.description": "À 100, passez en forme [gold]Arsenal[/gold] pendant 4 tours. \n\nGagnez 4 [gold]Arsenal[/gold] grâce aux attaques et au début de votre tour. \n\nPendant [gold]Arsenal[/gold], [gold]Frappe transversale[/gold] inflige 4 dégâts supplémentaires et \nles [gold]Armes Royales[/gold] gagnent des effets supplémentaires et ne coûtent plus de PV.",
+  "NOCTIS_ARMIGER.title": "Arsenal",
+  "NOCTIS_ROYAL_ARMS.description": "Cartes puissantes qui coûtent des PV. Gagnez 7 [gold]Arsenal[/gold] quand elles sont jouées. Elles gagnent des effets supplémentaires tant que [gold]Arsenal[/gold] ou [gold]Arsenal libéré[/gold] est actif.",
+  "NOCTIS_ROYAL_ARMS.title": "Armes Royales",
+  "NOCTIS_WARP_STRIKE.description": "Cette carte est considérée comme une [gold]Frappe transversale[/gold].",
+  "NOCTIS_WARP_STRIKE.title": "Frappe transversale"
+}

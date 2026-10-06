@@ -1,0 +1,23 @@
+{
+  "NOCTIS-CUP_NOODLES.description": "Au début du combat, soignez [blue]3[/blue] PV.",
+  "NOCTIS-CUP_NOODLES.flavor": "Prêt en 2 minutes.",
+  "NOCTIS-CUP_NOODLES.title": "Cup Noodles",
+  "NOCTIS-ENGINE_BLADE.description": "Gagnez 3 [gold]Arsenal[/gold] supplémentaires grâce à [gold]Frappe transversale[/gold].",
+  "NOCTIS-ENGINE_BLADE.flavor": "Vroom Vroom",
+  "NOCTIS-ENGINE_BLADE.title": "Lame-moteur",
+  "NOCTIS-FOUNDERS_KING_SIGIL.description": "Gagnez 2 [gold]Arsenal[/gold] supplémentaires grâce aux Attaques, aux [gold]Armes Royales[/gold] et au début de votre tour. À [gold]Arsenal[/gold] plein, passez en [gold]Arsenal libéré[/gold] pendant 5 tours. À la fin du combat, soignez des PV égaux à 15% de votre [gold]Arsenal[/gold] restant.",
+  "NOCTIS-FOUNDERS_KING_SIGIL.flavor": "La marque du véritable roi.",
+  "NOCTIS-FOUNDERS_KING_SIGIL.title": "Sceau du roi fondateur",
+  "NOCTIS-LOVERS_NOTEBOOK.description": "La première fois que vous perdez des [gold]PV[/gold] pendant votre tour, soignez autant de [gold]PV[/gold] que ceux perdus.",
+  "NOCTIS-LOVERS_NOTEBOOK.flavor": "",
+  "NOCTIS-LOVERS_NOTEBOOK.title": "Carnet de l'être cher",
+  "NOCTIS-RING_OF_THE_LUCII.description": "À la fin du combat, soignez des PV égaux à 10% de votre [gold]Arsenal[/gold] restant.",
+  "NOCTIS-RING_OF_THE_LUCII.flavor": "Seul le véritable roi peut porter l'Anneau.",
+  "NOCTIS-RING_OF_THE_LUCII.title": "Anneau des Lucii",
+  "NOCTIS-ROYAL_SIGIL.description": "Commencez le combat avec 15 [gold]Arsenal[/gold]. Améliore vos [gold]Arts d'Arsenal[/gold].",
+  "NOCTIS-ROYAL_SIGIL.flavor": "",
+  "NOCTIS-ROYAL_SIGIL.title": "Sceau royal",
+  "NOCTIS-ULTIMA_SWORD.description": "Au début du combat, ajoutez 3 [gold]Frappes transversales[/gold] dans votre [gold]Main[/gold].",
+  "NOCTIS-ULTIMA_SWORD.flavor": "",
+  "NOCTIS-ULTIMA_SWORD.title": "Lame Ultima"
+}
