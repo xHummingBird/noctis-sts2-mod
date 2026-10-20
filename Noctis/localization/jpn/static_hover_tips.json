@@ -1,0 +1,8 @@
+{
+  "NOCTIS_ARMIGER.description": "ゲージが100に達すると、4ターンの間[gold]ファントムソード召喚[/gold]状態になる。\n\nアタック時とターン開始時に[gold]ファントムゲージ[/gold]を4獲得する。\n\n[gold]ファントムソード召喚[/gold]状態中、[gold]シフトブレイク[/gold]のダメージが4増加し、\n[gold]ファントムソード[/gold]は追加効果を得て、体力を消費しなくなる。",
+  "NOCTIS_ARMIGER.title": "ファントムソード召喚",
+  "NOCTIS_ROYAL_ARMS.description": "体力を消費する強力なカード。プレイ時に[gold]ファントムゲージ[/gold]を7獲得する。[gold]ファントムソード召喚[/gold]または[gold]真ファントムソード[/gold]状態中は追加効果を得る",
+  "NOCTIS_ROYAL_ARMS.title": "ファントムソード",
+  "NOCTIS_WARP_STRIKE.description": "このカードは[gold]シフトブレイク[/gold]として扱う。",
+  "NOCTIS_WARP_STRIKE.title": "シフトブレイク"
+}
